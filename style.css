@@ -1,0 +1,37 @@
+/***********************************
+            Reset
+***********************************/
+html {
+    box-sizing: border-box
+}
+
+*, *::before, **::after {
+    box-sizing: inherit
+}
+
+body {
+    font-family: poppins, Helvetica, sans-serif;
+    background-color: #EFEFEF;
+}
+
+/***********************************
+            Main section
+***********************************/
+#test-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.test {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(192, 205, 217);
+    width: 60vw;
+    height: 60vh;
+    border-radius: 10px;
+}
