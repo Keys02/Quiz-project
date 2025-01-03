@@ -25,18 +25,21 @@ body {
     align-items: center;
     font-size: 1.3em;
 }
-
 .test {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background-color: rgba(225,225,225,0.8);
-    width: 350px;
-    height: 350px;
-    padding: 25px;
-    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+    padding: 15px;
+    border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+h1 {
+    margin-top: 0;
 }
 
 .question-sec {
@@ -55,6 +58,7 @@ ol {
     width: 350px;
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 
@@ -81,14 +85,24 @@ input[type="radio"] {
 
 
 .test-result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: white;
 }
 
 .test-score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     background-color: rgba(225,225,225,0.8);
     border-radius: 100%;
-    padding: 3.5em;
+    font-size: 2em;
+    margin: 0;
+    width: 200px;
+    height: 200px;
     color: #212121;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
