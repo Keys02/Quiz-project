@@ -8,7 +8,7 @@ let testQuestions = [
         answerKey: "Elon Musk"
     },
     {
-        question: "Which of these technologies used for backend developement?",
+        question: "Which of following technologies is used for backend developement?",
         optionA: "CSS",
         optionB: "HTML",
         optionC: "Angular",
@@ -48,27 +48,38 @@ function createQuestion() {
 
     $("#options-form").html(
     `   
-        <fieldset class="questions-and-answers">
-            <!-- Option A -->
-            <input type="radio" id="${testQuestions[currentQuestion]["optionA"]}" name="option" value="${testQuestions[currentQuestion]["optionA"]}">
-            <label for="${testQuestions[currentQuestion]["optionA"]}">${testQuestions[currentQuestion]["optionA"]}</label><br>
+        <ol>
+            <fieldset>
+                <!-- Option A -->
+                <li>
+                    <input type="radio" id="${testQuestions[currentQuestion]["optionA"]}" name="option" value="${testQuestions[currentQuestion]["optionA"]}">
+                    <label for="${testQuestions[currentQuestion]["optionA"]}">${testQuestions[currentQuestion]["optionA"]}</label>
+                </li>
 
-            <!-- Option B -->
-            <input type="radio" id="${testQuestions[currentQuestion]["optionB"]}" name="option" value="${testQuestions[currentQuestion]["optionB"]}">
-            <label for="${testQuestions[currentQuestion]["optionB"]}">${testQuestions[currentQuestion]["optionB"]}</label><br>
+                <!-- Option B -->
+                <li>
+                    <input type="radio" id="${testQuestions[currentQuestion]["optionB"]}" name="option" value="${testQuestions[currentQuestion]["optionB"]}">
+                    <label for="${testQuestions[currentQuestion]["optionB"]}">${testQuestions[currentQuestion]["optionB"]}</label>
+                </li>
 
-            <!-- Option C -->
-            <input type="radio" id="${testQuestions[currentQuestion]["optionC"]}" name="option" value="${testQuestions[currentQuestion]["optionC"]}">
-            <label for="${testQuestions[currentQuestion]["optionC"]}">${testQuestions[currentQuestion]["optionC"]}</label><br>
+                <!-- Option C -->
+                <li>
+                    <input type="radio" id="${testQuestions[currentQuestion]["optionC"]}" name="option" value="${testQuestions[currentQuestion]["optionC"]}">
+                    <label for="${testQuestions[currentQuestion]["optionC"]}">${testQuestions[currentQuestion]["optionC"]}</label>
+                </li>
 
-            <!-- Option D -->
-            <input type="radio" id="${testQuestions[currentQuestion]["optionD"]}" name="option" value="${testQuestions[currentQuestion]["optionD"]}">
-            <label for="${testQuestions[currentQuestion]["optionD"]}">${testQuestions[currentQuestion]["optionD"]}</label><br>
-        </fieldset>
-        <fieldset>
-            <input class="btn" type="reset" value="Reset">
-            <input class="btn" type="submit" value="Next">
-        </fieldset>
+                <!-- Option D -->
+                <li>
+                    <input type="radio" id="${testQuestions[currentQuestion]["optionD"]}" name="option" value="${testQuestions[currentQuestion]["optionD"]}">
+                    <label for="${testQuestions[currentQuestion]["optionD"]}">${testQuestions[currentQuestion]["optionD"]}</label>
+                </li>
+                </fieldset>
+                
+                <div class="button-sec">
+                    <input class="btn" type="reset" value="Reset">
+                    <input class="btn" type="submit" value="Next">
+                </div>
+        </ol>
     `
     )
 }
@@ -97,7 +108,7 @@ function showTestResults(){
     $("#test-container").html(
         `
             <div class="test-result">
-                <p>Your test score is</p>
+                <p class="test-result-message">Your test score is</p>
                 <p class="test-score">${testScore}</p>
             </div>
         `

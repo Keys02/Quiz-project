@@ -11,7 +11,7 @@ html {
 
 body {
     font-family: poppins, Helvetica, sans-serif;
-    background-color: #EFEFEF;
+    background-image: linear-gradient(to right, #09203F  ,  #537895)
 }
 
 /***********************************
@@ -23,7 +23,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 .test {
@@ -31,37 +31,69 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: rgb(192, 205, 217);
-    width: 60vw;
-    height: 60vh;
+    background-color: rgba(225,225,225,0.8);
+    width: 350px;
+    height: 350px;
+    padding: 25px;
     border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.question-sec {
+    text-align: center;
 }
 
 fieldset {
     border: none;
 }
 
+ol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    list-style-type: none;
+    padding: 0;
+}
+
+
+input[type="radio"] {
+    accent-color: #09203F;
+}
+
 .btn{
     margin-top: 1em;
     border: 0;
-    padding: 5px 15px;
-    border-radius: 5px;
-    font-size: 1em;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: .85em;
+    background-color: #537895;
+    color: #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 
 .btn:hover {
     cursor: pointer;
+    background-color: #456379
 }
 
-input[type="submit"] {
-    margin-left: 1.5em;
+
+.test-result {
+    color: white;
 }
 
 .test-score {
     text-align: center;
-    background-color: tomato;
+    background-color: rgba(225,225,225,0.8);
     border-radius: 100%;
-    padding: 3em;
-    color: white;
+    padding: 3.5em;
+    color: #212121;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
+input[type="submit"]{
+    margin-left: 20px;
+}
+
