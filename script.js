@@ -123,18 +123,6 @@ function submitAnswer(){
     return selectedAnswer
 }
 
-
-// function showTestResults(){
-//     $("#test-container").html(
-//         `
-//             <div class="test-result">
-//                 <p class="test-result-message">Your test score is</p>
-//                 <p class="test-score">${testScore}</p>
-//             </div>
-//         `
-//     )
-// }
-
 function showTestResults(){
     let template
     if(testScore == 0) {
