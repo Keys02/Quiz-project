@@ -49,6 +49,19 @@ fieldset {
     font-size: 1em;
 }
 
+
+.btn:hover {
+    cursor: pointer;
+}
+
 input[type="submit"] {
     margin-left: 1.5em;
+}
+
+.test-score {
+    text-align: center;
+    background-color: tomato;
+    border-radius: 100%;
+    padding: 3em;
+    color: white;
 }
