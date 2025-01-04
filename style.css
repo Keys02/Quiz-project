@@ -2,7 +2,11 @@
             Reset
 ***********************************/
 html {
-    box-sizing: border-box
+    box-sizing: border-box;
+
+    /*  Variables */
+    --grad-color-one: #09203F;
+    --grad-color-two: #537895;
 }
 
 *, *::before, **::after {
@@ -11,7 +15,7 @@ html {
 
 body {
     font-family: poppins, Helvetica, sans-serif;
-    background-image: linear-gradient(to right, #09203F  ,  #537895)
+    background-image: linear-gradient(to right, var(--grad-color-one),  var(--grad-color-two))
 }
 
 /***********************************
@@ -63,7 +67,7 @@ ol {
 
 
 input[type="radio"] {
-    accent-color: #09203F;
+    accent-color: var(--grad-color-one);
 }
 
 .btn{
@@ -72,7 +76,7 @@ input[type="radio"] {
     padding: 10px 20px;
     border-radius: 10px;
     font-size: .85em;
-    background-color: #537895;
+    background-color: var(--grad-color-two);
     color: #FFFFFF;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
