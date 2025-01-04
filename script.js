@@ -97,7 +97,6 @@ $("#options-form").submit(function(event) {
         return
     } else {
         nextQuestion()
-        console.log(currentQuestion)
     }
 })
 
@@ -115,10 +114,8 @@ function nextQuestion(){
 function submitAnswer(){
     let selectedAnswer = $("input:radio[name='option']:checked").val()
     if(selectedAnswer == testQuestions[currentQuestion]["answerKey"]){
-        console.log("Correct answer")
         testScore++
     } else {
-        console.log("Wrong answer")
     }
     return selectedAnswer
 }
