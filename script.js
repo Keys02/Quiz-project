@@ -121,37 +121,42 @@ function submitAnswer(){
 }
 
 function showTestResults(){
+
     let template
-    if(testScore == 0) {
-        template = `
-                    <p class="test-result-message"><span style="color: tomato">Very poor 😭</span> your quiz score is</p>
-                    <p class="test-score">${testScore}</p>
-                    `
-    } else if(testScore == 1) {
-        template = `
-                    <p class="test-result-message"><span style="color: tomato">Poor 😞</span> your quiz score is</p>
-                    <p class="test-score">${testScore}</p>
-                    `
-    } else if(testScore == 2) {
-        template = `
-                    <p class="test-result-message"><span style="color: orange">Not bad 😑</span> your quiz score is</p>
-                    <p class="test-score">${testScore}</p>
-                    `
-    } else if(testScore == 3) {
-        template = `
-                    <p class="test-result-message"><span style="color: orange">Good 😏</span> your quiz score is</p>
-                    <p class="test-score">${testScore}</p>
-                    `
-    } else if(testScore == 4) {
-        template = `
-                    <p class="test-result-message"><span style="color: #28A745">Very Good 🙂</span> your quiz score is</p>
-                    <p class="test-score">${testScore}</p>
-                    `
-    } else if(testScore == 5) {
-        template = `
-                    <p class="test-result-message"><span style="color: #28A745">Good job 😍</span> your quiz score is</p>
-                    <p class="test-score">${testScore}</p>
-                    `
+
+    switch(testScore){
+        case 0:
+            template = `
+                        <p class="test-result-message"><span style="color: tomato">Very poor 😭</span> your quiz score is</p>
+                        <p class="test-score">${testScore}</p>
+                        `;
+                        break;
+        case 1:
+            template = `
+                        <p class="test-result-message"><span style="color: tomato">Poor 😞</span> your quiz score is</p>
+                        <p class="test-score">${testScore}</p>
+                        `;
+                        break;
+        case 3:
+            template = `
+                        <p class="test-result-message"><span style="color: orange">Good 😏</span> your quiz score is</p>
+                        <p class="test-score">${testScore}</p>
+                        `;
+                        break;
+        case 4:
+            template = `
+                        <p class="test-result-message"><span style="color: #28A745">Very Good 🙂</span> your quiz score is</p>
+                        <p class="test-score">${testScore}</p>
+                        `;
+                        break;
+        case 5:
+            template = `
+                        <p class="test-result-message"><span style="color: #28A745">Good job 😍</span> your quiz score is</p>
+                        <p class="test-score">${testScore}</p>
+                        `;
+                        break;
+
+
     }
     $("#test-container").html(`<div class="test-result">${template}</div>`)
 }
